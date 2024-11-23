@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: beige;
+    
+}
+
+.logo  {
+    font-size: 4rem;
+    transition: 0.5 ease;
+    font-weight: 800;
+    color: black;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: rgb(192, 123, 33);
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid black;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.logo:hover::after {
+    transform: scaleX(0.9);
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 4rem;
+    padding: 2rem 5% 2rem;
+}
+.gambar {
+    border-radius: 50%;
+}
+
+.gambar img {
+    border-radius: 50%;
+    position: relative;
+    width: 32vw;
+    box-shadow: 0 0 25px solid;
+}
+
+.dira {
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.dira h1 {
+    font-size: 3rem;
+}
+
+.btn {
+   background-color: black;
+   color: #fff;
+   border-radius: 2rem; 
+   padding: 0.5rem;
+   font-size: 1rem;
+   font-weight: 600;
+   border: 2px solid rgb(192, 123, 33);
+   transition: 0.3s ease;
+   cursor: pointer;
+   margin-top: 15px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: rgb(192, 123, 33);
+    color: black;
+    box-shadow: 0 0 25px rgb(192, 123, 33);
+}
